@@ -1,14 +1,22 @@
 # VGA
 Video Gears Application Web Media Development Services, Creative Media Site Designer Tools for Internet Radio/TV, Entertainment Industries Corporate Creative Cloud to design Site for web casting, video conferencing, distance learning, video surveillance,Video Media site '
 
-
-Integration
-VGA Develop Friendly user Design Application & Script to Easily Integrate any type of web site Audio Video CMS Tools Vadeo/Audio site builder , Flash - html5 players generator,Template generator
-
-Application & Script Design
+<b>Application & Script Design</b><br/>
 We Design Audio Video CMS Tools site builder , Flash - html5 players generator,Template generator tools,to instantly publish and manage videos to web page
 
-HTML5 GEN MANUAL &  TUTORIAL
+
+
+<b>Integration</b><br/>
+VGA Develop Friendly user Design Application & Script to Easily Integrate any type of web site Audio Video CMS Tools Vadeo/Audio site builder , Flash - html5 players generator,Template generator
+
+
+
+
+<b>HTML5 GENERTOR </b>
+
+
+<img alt="" src="http://html5studio.smtvs.com/images/12.png"  width="300" align="" border="0"/>
+
 
 Buttons:
 
