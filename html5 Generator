@@ -300,8 +300,8 @@ function AddPlayer(form, Action){
 
 
 
-<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://html5studio.smtvs.com/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="http://html5studio.smtvs.com/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="init();">
 
@@ -310,7 +310,7 @@ function AddPlayer(form, Action){
     
     
 <br/>
-<div id="draggable1"  style="position: absolute; WIDTH: 650px; TOP: 6px; left:33px; HEIGHT: 210px;Z-INDEX: 120;">
+<div id=""  style="position: absolute; WIDTH: 650px; TOP: 6px; left:33px; HEIGHT: 210px;Z-INDEX: 120;">
     <div id="H5properties" class="panel panel-default" style="Z-INDEX: 210; position: absolute;top:10px; background-color:#C0C0C0;" style="position:absolute;background-color:#C0C0C0;background-image:url();background-repeat:repeat;;background-position:left top;height:85px; border: 2px solid #E68282; border-color: #E68282 #650000 #650000 #9C2828;z-index:200" >
         
         <div class="panel-heading" >
