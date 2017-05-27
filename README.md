@@ -62,5 +62,100 @@ is for setting controls on or off
 Source Cod Textarea
 is where the player code is generteded
 
-
+ <p class="p10"><span class="s1">Video Formats</span></p>
+        <p class="p2"><span class="s1">Currently, there are 3 supported video formats for the video element:</span></p>
+        <table width="638.0" cellspacing="0" cellpadding="0" class="t4">
+          <tbody>
+            <tr>
+              <td valign="top" class="td7">
+                <p class="p2"><span class="s1"><b>Format</b></span></p>
+              </td>
+              <td valign="top" class="td8">
+                <p class="p2"><span class="s1"><b>IE</b></span></p>
+              </td>
+              <td valign="top" class="td8">
+                <p class="p2"><span class="s1"><b>Firefox</b></span></p>
+              </td>
+              <td valign="top" class="td8">
+                <p class="p2"><span class="s1"><b>Opera</b></span></p>
+              </td>
+              <td valign="top" class="td8">
+                <p class="p2"><span class="s1"><b>Chrome</b></span></p>
+              </td>
+              <td valign="top" class="td8">
+                <p class="p2"><span class="s1"><b>Safari</b></span></p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="td9">
+                <p class="p2"><span class="s1">Ogg</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">3.5+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">10.5+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">5.0+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="td9">
+                <p class="p2"><span class="s1">MPEG 4</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">9.0+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">5.0+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">3.0+</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="td9">
+                <p class="p2"><span class="s1">WebM</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">10.6+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p2"><span class="s1">6.0+</span></p>
+              </td>
+              <td valign="top" class="td10">
+                <p class="p11"><span class="s1">No</span></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="ul1">
+          <li class="li2"><span class="s1">Ogg = Ogg files with Theora video codec and Vorbis audio codec</span></li>
+          <li class="li2"><span class="s1">MPEG4 = MPEG 4 files with H.264 video codec and AAC audio codec</span></li>
+          <li class="li2"><span class="s1">WebM = WebM files with VP8 video codec and Vorbis audio codec</span></li>
+        </ul>
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
