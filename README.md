@@ -41,6 +41,13 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
     <p>set time  and text for video captions.</p>
   </div>
 </div>
+
+
+
+<b>Custoom html5 player Skin & Template </b>
+
+<img alt="" src="http://html5studio.smtvs.com/images/17.png"  width="300" align="" border="0"/>
+
 Buttons:
 
 Generate Video player button:
