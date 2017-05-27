@@ -1,0 +1,485 @@
+
+<!DOCTYPE HTML >
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <META name="AUTHOR" content="Van-Gunt Allen -vanguntallen@gmail.com">
+            <META name="KEYWORDS" content="HTML5 TV Page  generator">
+                <META name="DESCRIPTION" content="HTML5 Audio Video Player generator">
+                    <META NAME="Generator" CONTENT="VCMS">
+                        <TITLE> HTML5 generator</TITLE>
+                        
+                        <head>
+                            <style type="text/css">
+                                div.ex
+                                {
+                                    width:220px;
+                                    padding:10px;
+                                    border:5px solid gray;
+                                    margin:0px;
+                                }
+                            </style>
+
+
+
+
+<script type="text/javascript">
+    // Master function, encapsulates all functions
+    function init() {
+        var video = document.getElementById("Video1");                                               
+        if (video.canPlayType) {   // tests that we have HTML5 video support
+            // if successful, display buttons and set up events
+            document.getElementById("buttonbar").style.display = "block";
+            document.getElementById("inputField").style.display = "block";
+
+            //  button events
+            //  Play
+            document.getElementById("play").addEventListener("click", vidplay, false);
+            //  Restart
+            document.getElementById("restart").addEventListener("click", function(){
+                setTime(0);
+             }, false);
+            //  Skip backward 10 seconds
+            document.getElementById("rew").addEventListener("click", function(){
+                setTime(-10);                
+            }, false);
+            //  Skip forward 10 seconds
+            document.getElementById("fwd").addEventListener("click", function(){
+                setTime(10);
+            }, false);                
+            //  set src == latest video file URL
+            document.getElementById("loadVideo").addEventListener("click", getVideo, false);
+                            
+            // fail with message 
+            video.addEventListener("error", function(err) {
+                errMessage(err);
+            }, true);
+            //  display video duration when available
+            video.addEventListener("loadedmetadata", function () {
+                                   vLength = video.duration.toFixed(1);
+                                   document.getElementById("vLen").textContent = vLength; // global variable
+                                   }, false);
+                                   
+
+            //  display the current and remaining times
+            video.addEventListener("timeupdate", function () {
+                                   //  Current time
+                                   var vTime = video.currentTime;
+                                   document.getElementById("curTime").textContent = vTime.toFixed(1);
+                                   document.getElementById("vRemaining").textContent = (vLength - vTime).toFixed(1);
+                                   }, false);
+                                   
+                                         //  button helper functions 
+            //  skip forward, backward, or restart
+            function setTime(tValue) {
+            //  if no video is loaded, this throws an exception 
+                try {
+                    if (tValue == 0) {
+                        video.currentTime = tValue;
+                    }
+                    else {
+                        video.currentTime += tValue;
+                    }
+                    
+                 } catch (err) {
+                     // errMessage(err) // show exception
+                 errMessage("Video content might not be loaded");
+                   }
+         }
+             //  play video
+             function vidplay(evt) {
+                if (video.src == "") {  // on first run, src is empty, go get file
+                    getVideo();
+                }
+                button = evt.target; //  get the button id to swap the text based on the state                                    
+                if (video.paused) {   // play the file, and display pause symbol
+                   video.play();
+                   button.textContent = "||";
+                } else {              // pause the file, and display play symbol  
+                   video.pause();
+                   button.textContent = ">";
+                }                                        
+            }
+            //  load video file from input field
+            function getVideo() {
+                var fileURL = document.getElementById("videoFile").value;  // get input field                    
+                if (fileURL != ""){
+                   video.src = fileURL;
+                   video.load();  // if HTML source element is used
+                   document.getElementById("play").click();  // start play
+                 } else {
+                    errMessage("Enter a valid video URL");  // fail silently
+                 }
+            }
+            
+            
+            //  display an error message 
+            function errMessage(msg) {
+            // displays an error message for 5 seconds then clears it
+                document.getElementById("errorMsg").textContent = msg;
+                setTimeout("document.getElementById('errorMsg').textContent=''", 5000);
+            }
+
+        } // end of runtime
+    }// end of master         
+</script>
+
+<script type="text/javascript">
+    
+    
+    
+    /* ---------------------------------------------------------------------- *\
+     Function    : Generate HTML5 VideoPlayer()
+     Description : HTML5 Video Player generator.
+     \* ---------------------------------------------------------------------- */
+
+
+
+
+function Generateform(form) {
+    
+    
+    var txt="<video class=\""+form.Skin.value+"\" audio=\""+form.html5player_audio.value+"\" autoplay=\""+form.html5player_autoplay.value+"\" loop=\""+form.html5player_loop.value+"\" poster=\""+form.html5player_poster.value+"\" preload=\""+form.html5player_preload.value+"\" width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\">" ;
+    
+    
+    
+    if(form.text.value){
+        
+        txt+=""+form.text.value+"";
+    }
+    
+    
+    txt+="</video>";
+    
+    form.textarea.value=txt;
+}
+
+
+function Generateform2(form) {
+    
+    var txt="<audio  audio=\""+form.html5player_audio.value+"\" autoplay=\""+form.html5player_autoplay.value+"\" loop=\""+form.html5player_loop.value+"\" poster=\""+form.html5player_poster.value+"\" preload=\""+form.html5player_preload.value+"\" width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\">" ;
+    
+    
+    if(form.text.value){
+        
+        txt+=""+form.text.value+"";
+    }
+    
+    
+    txt+="</audio>";
+    
+    form.textarea.value=txt;
+}
+
+function AddText(form, Action){
+    var AddTxt="";
+    var txt="";
+    
+    if(Action==2) {
+        if(txt!=null)
+        
+        AddTxt="<source src=\""+form.videoFile.value+"\" type=\""+form.html5FileType.value+"\" />\r\n" ;
+        
+    }
+    
+    
+    if(Action==3) {
+        if(txt!=null)
+        
+        AddTxt=" <track kind=\""+form.html5player_kind.value+"\" src=\""+form.html5player_captions.value+"\" srclang=\"en\" label=\"English\"></track>\r\n" ;
+        
+        
+    }
+    
+    
+    
+    if(Action==4) {
+        if(txt!=null)
+        AddTxt="<video src=\""+form.videoFile.value+"\"  poster=\""+form.html5player_poster.value+"\" preload=\""+form.html5player_preload.value+"\"   width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\"></video>\r\n" ;
+        
+    }
+    
+    
+    if(Action==5) {
+        if(txt!=null)
+        
+        AddTxt="<audio  src=\""+form.videoFile.value+"\"  poster=\""+form.html5player_poster.value+"\"  controls=\""+form.html5PlayerControls.value+"\"></audio>\r\n" ;
+        
+    }
+    
+    
+    
+    if(Action==6) {
+        if(txt!=null)
+        AddTxt="<audio src=\""+form.videoFile.value+"\"    width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\"></audio>\r\n" ;
+        
+    }
+    
+    
+    if(Action==7) {
+        if(txt!=null)
+        AddTxt="<video   src=\""+form.videoFile.value+"\"  width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\"></video>\r\n" ;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    form.text.value+=AddTxt;
+}
+
+
+
+
+
+
+function AddPlayer(form, Action){
+    var AddPly="";
+    var ply="";
+    if(Action==1){
+        if(ply!=null)
+        AddPly="<video   src=\""+form.videoFile.value+"\"  poster=\""+form.html5player_poster.value+"\" preload=\""+form.html5player_preload.value+"\"  width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\" type=\""+form.html5FileType.value+"\"></video>\r\n" ;
+        
+    }
+    
+    
+    if(Action==4) {
+        if(ply!=null)
+        AddPly="<audio  src=\""+form.videoFile.value+"\"  preload=\""+form.html5player_preload.value+"\"   width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\"></audio>\r\n" ;
+        
+    }
+    
+    
+    if(Action==5) {
+        if(ply!=null)
+        
+        AddPly="<img src=\""+form.html5player_poster.value+"\"  width=\""+form.html5player_width.value+"\" >\r\n" ;
+        
+    }
+    
+    
+    
+    if(Action==6) {
+        if(ply!=null)
+        AddPly="<audio src=\""+form.videoFile.value+"\"    width=\""+form.html5player_width.value+"\"></audio>\r\n" ;
+        
+    }
+    
+    
+    if(Action==7) {
+        if(ply!=null)
+        AddPly="<video  src=\""+form.videoFile.value+"\"  width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" controls=\""+form.html5PlayerControls.value+"\" type=\""+form.html5FileType.value+"\"></video>\r\n" ;
+        
+    }
+    if(Action==8){
+        if(ply!=null)
+        AddPly="<video class=\""+form.Skin.value+"\" src=\""+form.videoFile.value+"\" width=\""+form.html5player_width.value+"\" height=\""+form.html5player_height.value+"\" type=\""+form.html5FileType.value+"\" id=\""+form.html5player_id.value+"\" poster=\""+form.html5player_poster.value+"\" preload=\""+form.html5player_preload.value+"\"></video>\n" ;
+        
+    }
+    form.textarea.value+=AddPly;
+}
+
+
+
+
+
+
+
+    </script>
+
+
+
+<style type="text/css">
+    @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+    body{margin-top:50px;background: rgb(36, 39, 41);}
+    
+    </style>
+
+
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="init();">
+
+<form  method="post" action="" >
+  
+    
+    
+<br/>
+<div id="draggable1"  style="position: absolute; WIDTH: 650px; TOP: 6px; left:33px; HEIGHT: 210px;Z-INDEX: 120;">
+    <div id="H5properties" class="panel panel-default" style="Z-INDEX: 210; position: absolute;top:10px; background-color:#C0C0C0;" style="position:absolute;background-color:#C0C0C0;background-image:url();background-repeat:repeat;;background-position:left top;height:85px; border: 2px solid #E68282; border-color: #E68282 #650000 #650000 #9C2828;z-index:200" >
+        
+        <div class="panel-heading" >
+            HTML5 Audio/Video Player Generator
+            
+            
+            <div id="" style="position: absolute; LEFT:522px; TOP: 3px;  Z-INDEX: 0;">
+                
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Close " onClick="hideH5Properties();return false;">
+                    <i class="fa  fa-plus-square"></i>
+                </button></div>
+        </div>
+        <div class="panel-body">
+            <P>
+            <button class="btn btn-default"type="button" name="" value=""   style="font-family: arial, verdana, helvetica; font-size: 10px;width:85" onClick="Generateform(this.form);return false;">Generate Video Player</button>
+            <input class="btn btn-default" type="button" value="Insert  Video Player" size="30" onclick="AddPlayer(form,7);return false;" style="font-size: 10px; font-family: arial, verdana, helvetica, sans serif; margin-left: 1px; width: 125px;" />
+            <input type="submit"  class="btn btn-default"  value="  Source Type " onClick="AddText(this.form,2);return false;" style="font-size: 10px; font-family: arial, verdana, helvetica, sans serif; margin-left: 1px; width: 90px;"  >
+                
+                <input type="submit"class="btn btn-default"  class="btn btn-default"  value="   Track  " onClick="AddText(this.form,3);return false;" style="font-size: 10px; font-family: arial, verdana, helvetica, sans serif; margin-left: 1px; width: 90px;"  >
+                    
+                 
+                    
+                    
+                    <button class="btn btn-default"type="button" name="" value=""style="font-family: arial, verdana, helvetica; font-size: 10px;width:85" onclick="AddPlayer(form,5);return false;">Insert Image </button>
+                     <div id="" style="display: none;")>
+                    <button id="loadVideo" >Load</button>
+                    </div>
+                    
+                    <input class="btn btn-default" type="button" value="Insert  AudioPlayer" size="30" onclick="AddPlayer(form,6);return false;" style="font-size: 10px; font-family: arial, verdana, helvetica, sans serif; margin-left: 1px; width: 125px;" />
+                    
+                    
+                    <input type="submit" class="btn btn-default"  value="  Media player " onClick="AddPlayer(this.form,8);return false;" style="font-size: 10px; font-family: arial, verdana, helvetica, sans serif; margin-left: 1px; width: 100px;"  >
+                       <p><br/>
+                                              <video id="Video1" style="border: 1px solid blue;background-color: #020202;" height="250" width="380">
+                           HTML5 Video is required for this example
+                       </video>
+                       
+                       <div id="buttonbar" style="display: none;")>
+                           
+                           <button id="restart" onClick="return false;" ><i class ="fa  fa-pause" ></i></button>
+                           <button id="rew" onClick="return false;" ><i class ="fa   fa-backward" ></i></button>
+                           <button id="play" onClick="return false;" ><i class ="fa fa-play" ></i></button>
+                           <button  id="fwd " onClick="return false;" ><i class ="fa  fa-forward" ></i></button>
+                           <input type="range"  onClick="return false;">
+                       </div>
+                       <div id="status" style="Z-INDEX: 150; position: absolute; left:160px;top:395px; ">
+                           Length(seconds): <span id="vLen"></span>
+                           Current time:  <span id="curTime" title="Current time"></span> <br/> Remaining time: <span id="vRemaining" title="Remaining time"></span></div>
+                       </div>
+        
+        
+
+<P><br/>
+<span style="font-family: arial, verdana, helvetica; font-size: 11px; font-weight: bold;">Player src:</span>
+
+<div id= "inputField"  >
+    <input class="form-control" type="text" id="videoFile" value="http://smtvs.com/tv-media/v-15.mp4" style=" width:380px;"/>
+    
+</div>
+<div id="errorMsg" style="color:Red;" ></div>
+<P>
+
+                        <span style="font-family: arial, verdana, helvetica; font-size: 11px; font-weight: bold;">Captions-Subtitles </span>
+                        <P>
+                        <input class="form-control" type="text" name="html5player_captions" value=" demo.captions.vtt" size="45" size="45"style=" width:380px;" /><P>
+                        
+                        
+                        <span style="font-family: arial, verdana, helvetica; font-size: 11px; font-weight: bold;">Player id</span>
+                        <BR>
+                        <input class="form-control" type="text" name="html5player_id" value=" player1" size="45"style=" width:380px;" /><P>
+                        
+                                              <P>
+                        <span style="font-family: arial, verdana, helvetica; font-size: 11px; font-weight: bold;">Player Poster</span>
+                        <BR>
+                        <input class="form-control" type="text" name="html5player_poster" value="your url" size="45"style=" width:380px;" /><P>
+                        
+                        
+                        
+                        
+                        
+                        <span style="font-family: arial, verdana, helvetica; font-size: 11px; font-weight: bold;">Player Width:</span><BR>
+                        <input class="form-control" type="text" name="html5player_width" value="" size="18" style=" width:110px;" /><P>
+                        <span style="font-family: arial, verdana, helvetica; font-size: 11px; font-weight: bold;"> Player Height:</span><br>
+                        
+                        <input class="form-control" type="text" name="html5player_height" value="" size="18" style=" width:110px;" />
+                        
+                        
+                        
+                        <div style="Z-INDEX: 210; position: absolute; left:421px;top:90px;width:270px;"><BR>
+                            <select class="form-control" name="" id="html5FileType" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">MediaType</option>
+                                <option value="video/ogg">video ogg</option>
+                                <option value="video/mp4">video mp4</option>
+                                <option value="video/webm">video webm</option>
+                                <option value="audio/ogg">audio ogg</option>
+                                <option value="audio/mpeg">audio mpeg</option>
+                            </select>
+                            
+                            
+                            <select class="form-control" name="" id="html5player_kind" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">Captions Type</option>
+                                <option value="captions">Captions</option>
+                                <option value="subtitles">Subtitles</option>
+                            </select>
+                            
+                            <select class="form-control" name="" id="Skin" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">Skin Type</option>
+                                <option value="video-js vjs-default-skin">video-js vjs-default-skin</option>
+                                <option value="mejs-wmp">mejs-wmp</option>
+                                <option value="mejs-ted">mejs-ted</option>
+                                <option value="video">Video Res</option>
+                            </select>
+                            
+                            <select class="form-control" name="" id="html5player_audio" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">Audio</option>
+                                <option value="muted">Muted</option>
+                                <option value="none">none</option>
+                                
+                            </select>
+                            
+                            
+                            
+                            <select class="form-control" name="" id="html5player_autoplay" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">Autoplay</option>
+                                <option value="autoplay">Autoplay</option>
+                                <option value="none">none</option>
+                                
+                            </select>
+                            
+                            
+                            
+                            <select class="form-control" name="" id="html5player_loop" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">Loop</option>
+                                <option value="loop">Loop</option>
+                                <option value="none">none</option>
+                            </select>
+                            
+                            
+                            
+                            <select class="form-control" name="" id="html5player_preload" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">Peload Media</option>
+                                <option value="preload">preload</option>
+                                <option value="none">none</option>
+                            </select>
+                            
+                            <select class="form-control" name="" id="html5PlayerControls" style="font-family: arial, verdana, helvetica; font-size: 11px; width: 50%;">
+                                <option value="">controls</option>
+                                <option value="controls">On</option>
+                                <option value="none">None</option>
+                            </select>
+                        
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <textarea class="form-control" rows="3" cols="67" name="textarea" id="textarea" wrap="soft" onclick="focus(this.code)"style="Z-INDEX: 20; POSITION: absolute; OVERFLOW-Y: auto; OVERFLOW-X: hidden; TOP:740px; LEFT: 133px;width:420px;" >
+                        </textarea>
+                        
+                        <textarea class="form-control" rows="2" cols="67" name="file" value="" id="text"style=" Z-INDEX: 0; POSITION: absolute; OVERFLOW-Y: auto; OVERFLOW-X: hidden; TOP:820px; LEFT: 133px;width:420px;">
+                            
+                        </textarea>
+                        
+                        </div></div>
+</div>
+
+</form >
+
+ </body>
+</html>
