@@ -15,9 +15,32 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 <b>HTML5 GENERTOR </b>
 
 
-<img alt="" src="http://html5studio.smtvs.com/images/12.png"  width="300" align="" border="0"/>
+<img alt="" src="http://html5studio.smtvs.com/images/11.png"  width="300" align="" border="0"/>
 
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>Template  Generator </h2>
+    <img alt="" src="http://html5studio.smtvs.com/images/12.png" height="" width="300" align="" border=""/>
+    <p>Generate video ,audio player with a  template.</p>
+    <p>Generate HTML and Build your Custom video ,movie responsive page
+   .</p>
+  </div>
 
+  <div class="w3-third">
+    <h2>Image Title Generator</h2>
+     <img alt="" src="http://html5studio.smtvs.com/images/14.png" height="" width="300" align="" border=""/>
+    <p>Use Image Title tool to aply  text to your image.</p> 
+    <p>That you cant use for your page design, Capture image from the video then put Text on image
+    .</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Captions Generator</h2>
+     <img alt="" src="http://html5studio.smtvs.com/images/8.png" height="" width="300" align="" border=""/>
+    <p> Generate Captions for your video clip.</p>
+    <p>set time  and text for video captions.</p>
+  </div>
+</div>
 Buttons:
 
 Generate Video player button:
