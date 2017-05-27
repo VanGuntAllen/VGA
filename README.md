@@ -26,13 +26,6 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
    .</p>
   </div>
 
-  <div class="w3-third">
-    <h2>Image Title Generator</h2>
-     <img alt="" src="http://html5studio.smtvs.com/images/14.png" height="" width="300" align="" border=""/>
-    <p>Use Image Title tool to aply  text to your image.</p> 
-    <p>That you cant use for your page design, Capture image from the video then put Text on image
-    .</p>
-  </div>
 
   <div class="w3-third">
     <h2>Captions Generator</h2>
