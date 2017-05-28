@@ -354,7 +354,7 @@ function AddPlayer(form, Action){
                            <button id="rew" onClick="return false;" ><i class ="fa   fa-backward" ></i></button>
                            <button id="play" onClick="return false;" ><i class ="fa fa-play" ></i></button>
                            <button  id="fwd " onClick="return false;" ><i class ="fa  fa-forward" ></i></button>
-                           <input type="range"  onClick="return false;">
+                         
                        </div>
                        <div id="status" style="Z-INDEX: 150; position: absolute; left:160px;top:395px; ">
                            Length(seconds): <span id="vLen"></span>
