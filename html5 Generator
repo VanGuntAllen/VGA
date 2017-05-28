@@ -350,7 +350,7 @@ function AddPlayer(form, Action){
                        
                        <div id="buttonbar" style="display: none;")>
                            
-                           <button id="restart" onClick="return false;" ><i class ="fa  fa-pause" ></i></button>
+                           <button id="restart" onClick="return false;" ><i class ="fa fa-repeat "></i></button>
                            <button id="rew" onClick="return false;" ><i class ="fa   fa-backward" ></i></button>
                            <button id="play" onClick="return false;" ><i class ="fa fa-play" ></i></button>
                            <button  id="fwd " onClick="return false;" ><i class ="fa  fa-forward" ></i></button>
