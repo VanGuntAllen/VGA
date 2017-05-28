@@ -469,10 +469,10 @@ function AddPlayer(form, Action){
                         
                         
                         
-                        <textarea class="form-control" rows="3" cols="67" name="textarea" id="textarea" wrap="soft" onclick="focus(this.code)"style="Z-INDEX: 20; POSITION: absolute; OVERFLOW-Y: auto; OVERFLOW-X: hidden; TOP:740px; LEFT: 133px;width:420px;" >
+                        <textarea class="form-control" rows="3" cols="67" name="textarea" id="textarea" wrap="soft" onclick="focus(this.code)"style="Z-INDEX: 20; POSITION: absolute; OVERFLOW-Y: auto; OVERFLOW-X: hidden; TOP:725px; LEFT: 133px;width:420px;" >
                         </textarea>
                         
-                        <textarea class="form-control" rows="2" cols="67" name="file" value="" id="text"style=" Z-INDEX: 0; POSITION: absolute; OVERFLOW-Y: auto; OVERFLOW-X: hidden; TOP:820px; LEFT: 133px;width:420px;">
+                        <textarea class="form-control" rows="2" cols="67" name="file" value="" id="text"style=" Z-INDEX: 0; POSITION: absolute; OVERFLOW-Y: auto; OVERFLOW-X: hidden; TOP:800px; LEFT: 133px;width:420px;">
                             
                         </textarea>
                         
