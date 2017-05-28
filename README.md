@@ -15,7 +15,7 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 <b>HTML5 GENERTOR </b>
 
 
-<img alt="" src="http://html5studio.smtvs.com/images/11.png"  width="300" align="" border="0"/>
+<img alt="" src="http://html5studio.smtvs.com/images/18.png"  width="300" align="" border="0"/>
 
 <div class="w3-row-padding">
   <div class="w3-third">
