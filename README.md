@@ -63,7 +63,7 @@ the video source video or url
      <p class="p2">
 <b>Media source type field</b>
    <p class="p2">
-<img alt="" src="http://html5studio.smtvs.com/images/21.png"  align="" border="0"/>
+<img alt="" src="http://html5studio.smtvs.com/images/26.png"  align="" border="0"/>
 is for setting the type of video or audio format source type
     <p class="p2">
 <b>Captions - Subtitle field</b>   <p class="p2">
