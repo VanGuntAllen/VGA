@@ -91,6 +91,7 @@ is for setting the counter color
 is for setting the video poster source  url
  <p class="p2">
 <b>Player Width  & Height field</b>
+<img alt="" src="http://html5studio.smtvs.com/images/27.png"  align="" border="0"/>
 is for setting player width
 Player Height field
      <p class="p2">
