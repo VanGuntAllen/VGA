@@ -42,7 +42,7 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 <img alt="" src="http://html5studio.smtvs.com/images/17.png"  width="300" align="" border="0"/>
 
 
-     <p class="p2">
+
 <h4><b>Generate Video player buttons:</b></h4>
 Use generating video button to generat player scritp in to the embed  textarea then you can  Insert in to ,template only need to set size and controls etc..
 
@@ -74,7 +74,7 @@ is for setting skin the size of the skin
 <b>Counter display Color field</b>
 is for setting the counter color
 
-     <p >
+  
 <b>Player Poster felid</b>
 is for setting the video poster source  url
  <p class="p2">
