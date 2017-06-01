@@ -41,65 +41,63 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 
 <img alt="" src="http://html5studio.smtvs.com/images/17.png"  width="300" align="" border="0"/>
 
-Buttons:
 
-Generate Video player button:
-is for generating video player in to template only need to set size and controls etc..
+     <p class="p2">
+<h4><b>Generate Video player buttons:</b></h4>
+Use generating video button to generat player scritp in to the embed  textarea then you can  Insert in to ,template only need to set size and controls etc..
+
 Generate Audio player button: is for generating audio player in to template only need to set size and controls etc..
 
-Source Type button:
-
-for adding video file in to player need to set the url of video or audio
-Track button : for adding subtitle or Caption text to player need to set the url of Caption text or Subtitle
-
-Insert Video player button:
-
-is for Insert stand a lone audio player in to template only need to set size and controls
-Insert Audio player button:
-
-is for Insert stand a lone video player in to template only need to set size and controls
-Media player button:
-
-is for generating video player with custom skin use field on the side panel st skin type and look
-
-Side Panel:
-Player SRC felid
+<h4></b>Side Panel Buttons:</b></h4> 
+<p class="p2">
+<b>Player SRC felid </b>
+<p class="p2">
 the video source video or url
+     <p class="p2">
+<b>Media source type field</b>
+is for setting the type of video or audio format source type
+    <p class="p2">
+<b>Captions - Subtitle field</b>
+is for setting captions , subtitle type url
+     <p class="p2">
+<b>Skin Type field</b>
+is for setting skin type and look of the 
+   <p class="p2">
+<b>Skin Color field</b>
+is for setting skin color type and look of the 
 
-Media type field
-is for setting the type of video or audio format youâ€™re useingCaptions - Subtitle field
-is for setting captions , subtitle type
+   <p class="p2">
+<b>Skin Size field</b>
+is for setting skin the size of the skin 
 
-Skin Type field
-is for setting skin type and look
-Player id felid
-is for setting player id
+ <p class="p2">
+<b>Counter display Color field</b>
+is for setting the counter color
 
-
-
-Player Poster felid
-is for setting the video poster source or url
-
-Player Width  & Height field
+     <p class="p2">
+<b>Player Poster felid</b>
+is for setting the video poster source  url
+ <p class="p2">
+<b>Player Width  & Height field</b>
 is for setting player width
 Player Height field
-
-
+     <p class="p2">
+<b>Mute field</b>
 setting mute or no mute for audio
-
-Autoplay field
+    <p class="p2">
+<b>Autoplay field </b>
 is for setting Autoplay or none
-
-Loop field
+     <p class="p2">
+<b>Loop field</b>
 is for setting loop or none
-
-Preload field
-is for setting image for preload in to player
-
-Controls field
+    <p class="p2">
+<b>Preload field</b>
+is for  for preload file in to player
+     <p class="p2">
+<b>Controls field </b>
 is for setting controls on or off
-
-Source Cod Textarea
+     <p class="p2">
+<b>Source Cod Textarea</b>
 is where the player code is generteded
 
  <p class="p10"><span class="s1">Video Formats</span></p>
@@ -198,4 +196,29 @@ is where the player code is generteded
     </tr>
   </tbody>
 </table>
+</p>
+</div></div>
+<div class="col-3 col-s-12">
+<div class="aside">
+ <h2>What's? HTML5 Generator Studio </h2>
+  <p>.HTML 5  Generator Studio and media page code builder, </p>
+ <h2>Where?</h2>
+<p>SMTVS Creative Cloud to design Site for web casting, video conferencing, distance learning, video surveillance,Video Media 
+
+
+.</p>
+<h2>How it work</h2>
+ <p> you can  generate video ,audio player and  template frame work and build a page ,  preview save use in your site .</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
