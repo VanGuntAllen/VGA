@@ -44,6 +44,10 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 
 
 <h4><b>Generate Video player buttons:</b></h4>
+
+
+<img alt="" src="http://html5studio.smtvs.com/images/19.png"  width="600" align="" border="0"/>
+
 Use generating video button to generat player scritp in to the embed  textarea then you can  Insert in to ,template only need to set size and controls etc..
 
 Generate Audio player button: is for generating audio player in to template only need to set size and controls etc..
