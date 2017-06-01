@@ -110,7 +110,7 @@ is for  for preload file in to player
 <b>Controls field </b>
 is for setting controls on or off
      <p class="p2">
-<b>Source Cod Textarea</b><br><img alt="" src="http://html5studio.smtvs.com/images/28.png"  align="" border="0"/>
+<b>Source Cod Textarea</b><br><img alt="" src="http://html5studio.smtvs.com/images/27.png"  align="" border="0"/>
 is where the player code is generteded
 
  <p class="p10"><span class="s1">Video Formats</span></p>
