@@ -56,7 +56,7 @@ Generate Audio player button: is for generating audio player in to template only
 <p class="p2">
 <b>Player SRC felid </b>
 
-<img alt="" src="http://html5studio.smtvs.com/images/20.png"  width="300" align="" border="0"/>
+<img alt="" src="http://html5studio.smtvs.com/images/20.png"  align="" border="0"/>
 
 <p class="p2">
 the video source video or url
