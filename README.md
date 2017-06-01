@@ -66,15 +66,15 @@ is for setting skin type and look of the
 <b>Skin Color field</b>
 is for setting skin color type and look of the 
 
-   <p class="p2">
+   <p >
 <b>Skin Size field</b>
 is for setting skin the size of the skin 
 
- <p class="p2">
+ <p >
 <b>Counter display Color field</b>
 is for setting the counter color
 
-     <p class="p2">
+     <p >
 <b>Player Poster felid</b>
 is for setting the video poster source  url
  <p class="p2">
