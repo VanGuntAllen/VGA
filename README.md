@@ -62,15 +62,15 @@ Generate Audio player button: is for generating audio player in to template only
 the video source video or url
      <p class="p2">
 <b>Media source type field</b>
-
+   <p class="p2">
 <img alt="" src="http://html5studio.smtvs.com/images/22.png"  align="" border="0"/>
 is for setting the type of video or audio format source type
     <p class="p2">
-<b>Captions - Subtitle field</b>
+<b>Captions - Subtitle field</b>   <p class="p2">
 <img alt="" src="http://html5studio.smtvs.com/images/23.png"  align="" border="0"/>
 is for setting captions , subtitle type url
      <p class="p2">
-<b>Skin Type field</b>
+<b>Skin Type field</b>   <p class="p2">
 <img alt="" src="http://html5studio.smtvs.com/images/24.png"  align="" border="0"/>
 is for setting skin type and look of the 
    <p class="p2">
@@ -86,7 +86,7 @@ is for setting skin the size of the skin
 is for setting the counter color
 
   
-<b>Player Poster felid</b>
+<b>Player Poster felid</b>   <p class="p2">
 <img alt="" src="http://html5studio.smtvs.com/images/24.png"  align="" border="0"/>
 is for setting the video poster source  url
  <p class="p2">
