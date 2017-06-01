@@ -63,7 +63,7 @@ the video source video or url
      <p class="p2">
 <b>Media source type field</b>
    <p class="p2">
-<img alt="" src="http://html5studio.smtvs.com/images/22.png"  align="" border="0"/>
+<img alt="" src="http://html5studio.smtvs.com/images/25.png"  align="" border="0"/>
 is for setting the type of video or audio format source type
     <p class="p2">
 <b>Captions - Subtitle field</b>   <p class="p2">
@@ -87,7 +87,7 @@ is for setting the counter color
 
   
 <b>Player Poster felid</b>   <p class="p2">
-<img alt="" src="http://html5studio.smtvs.com/images/24.png"  align="" border="0"/>
+<img alt="" src="http://html5studio.smtvs.com/images/26.png"  align="" border="0"/>
 is for setting the video poster source  url
  <p class="p2">
 <b>Player Width  & Height field</b>
