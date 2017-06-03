@@ -48,6 +48,95 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 
 <img alt="" src="http://html5studio.smtvs.com/images/19.png"  width="600" align="" border="0"/>
 
+<p class="p1"><br></p>
+<p class="p2"><b>HTML5 Genarator Functions Buttons</b></p>
+<p class="p1"><br></p>
+<p class="p3"><span class="s1"><b><span class="Apple-converted-space"> </span>#1: Generator Video button</b> <span class="Apple-converted-space">  </span></span><span class="s2">generate player script in to the embed textarea</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">&lt;video class="" audio="none" autoplay="autoplay" loop="none" poster="http://localhost/html5/images/test-5.png" preload="preload" width="500" height="400" controls="controls"&gt; <span class="Apple-converted-space">                                                   </span></span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">     </span>&lt;source src="m-video.mp4" type="video/mp4" /&gt;</span></p>
+<p class="p3"><span class="s2">&lt;/video&gt;</span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p5"><span class="s3"><b>#2: Generator<span class="Apple-converted-space">  </span>Audio<span class="Apple-converted-space">  </span>button</b> <span class="Apple-converted-space">  </span></span><span class="s4">generating audio player<span class="Apple-converted-space"> </span></span><span class="s2"> in to the embed textarea</span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p6">&lt;audio<span class="Apple-converted-space">  </span>audio="none" autoplay="autoplay" loop="none" poster="http://localhost/html5/images/test-5.png" preload="preload" width="500" height="400" controls="controls"&gt; <span class="Apple-converted-space">                                                   </span></p>
+<p class="p6"><span class="Apple-converted-space">                                            </span>&lt;source src="meson.mp3" type="audio/mpeg" /&gt;</p>
+<p class="p6">&lt;/audio&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p5"><span class="s3"><b>#3: Insert Vedio player<span class="Apple-converted-space">  </span>button</b><span class="Apple-converted-space">  </span></span><span class="s2">generate player script in to the embed textarea</span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p6">&lt;video<span class="Apple-converted-space">  </span>src="m-video.mp4"<span class="Apple-converted-space">  </span>width="500" height="400" controls="controls" type="video/mp4"&gt;&lt;/video&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+
+<p class="p5"><span class="s3"><b>#4: Source Type<span class="Apple-converted-space">  </span>button <span class="Apple-converted-space"> </span></b> <span class="Apple-converted-space">  </span></span><span class="s2">generating media type</span><span class="s3"> <span class="Apple-converted-space">      </span></span><span class="s2">in to the video source textarea</span></p>
+<p class="p1"><br></p>
+<p class="p6"><span class="Apple-converted-space">    </span>&lt;source src="http://123moviesfree.com/watch/john-wick-chapter-2-2017-i.16-online-free-123movies.html" type="video/mp4" /&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+
+<p class="p5"><span class="s3"><b>#5:<span class="Apple-converted-space">  </span>Track<span class="Apple-converted-space">  </span>button </b><span class="Apple-converted-space">    </span></span><span class="s2">generating media track</span><span class="s3"> <span class="Apple-converted-space">      </span></span><span class="s2">in to the video source textarea</span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;track kind="" src=" demo.captions.vtt" srclang="en" label="English"&gt;&lt;/track&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+
+<p class="p6"><b>#6:Insert Image<span class="Apple-converted-space">  </span>button<span class="Apple-converted-space"> </span></b></p>
+<p class="p1"><br></p>
+<p class="p6">&lt;img src="http://localhost/html5/images/test-5.png"<span class="Apple-converted-space">  </span>width="500" &gt;</p>
+<p class="p1"><br></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span><span class="s2">generate image script in to the embed textarea</span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p5"><span class="s3"><b>#7: Insert Audio Player button </b><span class="Apple-converted-space">  </span></span><span class="s2">generate player script in to the embed textarea</span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p6">&lt;audio src="m-video.mp3"<span class="Apple-converted-space">    </span>width="500"&gt;&lt;/audio&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p5"><span class="s3"><b>#8 Media Player button</b><span class="Apple-converted-space">  </span></span><span class="s2">generate player script with no control in to the embed text are</span></p>
+<p class="p1"><br></p>
+<p class="p6">&lt;video class="" src="m-video.mp4" width="500" height="400" type="video/mp4" id="video1" poster="http://localhost/html5/images/test-5.png" preload="preload"&gt;&lt;/video&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p5"><span class="s3"><b>#9 Custom Player<span class="Apple-converted-space">  </span>button<span class="Apple-converted-space"> </span></b> </span><span class="s2">generate<span class="Apple-converted-space">  </span>player script with<span class="Apple-converted-space">  </span>custom control in to the embed text are</span></p>
+<p class="p1"><br></p>
+<p class="p6">&lt;div id="video"&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;video id="my_video" width="550" height="310" autoplay<span class="Apple-converted-space">  </span>poster="http://localhost/html5/images/test-5.png" preload="preload" type="video/mp4" &gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;source src="m-video.mp4"&gt;</p>
+<p class="p6">&lt;object width="640" height="377" id="videoPlayer" name="videoPlayer" type="application/x-shockwave-flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" &gt;</p>
+<p class="p6"><span class="Apple-tab-span">	</span>&lt;param name="allowfullscreen" value="true"&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;param name="allowscriptaccess" value="always"&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;param name="flashvars" value="file=m-video.mp4"&gt;</p>
+<p class="p6"><span class="Apple-tab-span">	</span>&lt;param name="movie" value="videoPlayer.swf" /&gt;</p>
+<p class="p6">&lt;img src="video.jpg" width="854" height="480" alt="Video"&gt;</p>
+<p class="p6">&lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="m-video.mp4"&gt;Download it&lt;/a&gt; instead.&lt;/p&gt;</p>
+<p class="p6">&lt;/object&gt;</p>
+<p class="p6">&lt;/video&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;div id="video_controls_bar"&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;button id="playpausebtn"&gt;&lt;i class ="fa fa-play" &gt;&lt;/i&gt;&lt;/button&gt;</p>
+<p class="p6">&lt;input id="seekslider" type="range" min="0" max="100" value="0" step="1"&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;span id="curtimetext"&gt;00:00&lt;/span&gt; / &lt;span id="durtimetext"&gt;00:00&lt;/span&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;button id="mutebtn"&gt;&lt;i class ='fa fa-volume-up'&gt;&lt;/i&gt;&lt;/button&gt;</p>
+<p class="p6"><span class="Apple-converted-space">  </span>&lt;input id="volumeslider" type="range" min="0" max="100" value="100" step="1"&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;button id="fullscreenbtn"&gt;&lt;i class ="fa fa-desktop" &gt;&lt;/i&gt; &lt;/button&gt;</p>
+<p class="p6"><span class="Apple-converted-space"> </span>&lt;/div&gt;</p>
+<p class="p6">&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p6"><b>#10 Video Screen button <span class="Apple-converted-space"> </span></b></p>
+<p class="p1"><br></p>
+<p class="p6">to load and play view video you are working on <span class="Apple-converted-space"> </span></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+<p class="p1"><br></p>
+
 Use generating video button to generat player scritp in to the embed  textarea then you can  Insert in to ,template only need to set size and controls etc..
 
 Generate Audio player button: is for generating audio player in to template only need to set size and controls etc..
