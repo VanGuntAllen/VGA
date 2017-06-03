@@ -75,7 +75,7 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 
 <p class="p5"><span class="s3"><b>#4: Source Type<span class="Apple-converted-space">  </span>button <span class="Apple-converted-space"> </span></b> <span class="Apple-converted-space">  </span></span><span class="s2">generating media type</span><span class="s3"> <span class="Apple-converted-space">      </span></span><span class="s2">in to the video source textarea</span></p>
 <p class="p1"><br></p>
-<p class="p6"><span class="Apple-converted-space">    </span>&lt;source src="http://123moviesfree.com/watch/john-wick-chapter-2-2017-i.16-online-free-123movies.html" type="video/mp4" /&gt;</p>
+<p class="p6"><span class="Apple-converted-space">    </span>&lt;source src="m-video.mp4" type="video/mp4" /&gt;</p>
 <p class="p1"><br></p>
 <p class="p1"><br></p>
 
