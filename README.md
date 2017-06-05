@@ -13,4 +13,5 @@ VGA Develop Friendly user Design Application & Script to Easily Integrate any ty
 
 
 <b>HTML5 GENERTOR v1.0</b>
+AUTHOR:Van-Gunt Allen - vanguntallen@gmail.com
 Generate video ,audio player and html frame work and build a page , preview save use in your site
